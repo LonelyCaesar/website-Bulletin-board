@@ -1,0 +1,164 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	border: none;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/bg.gif);
+}
+
+form {
+	margin: 0px;
+}
+
+#warp {
+	display: table;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+}
+
+#masterDiv {
+	height: 40px;
+	width: 440px;
+	margin-top: 75px;
+	margin-left: 34px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9pt;
+	color: #960;
+}
+
+#postDiv {
+	padding: 10px;
+	margin-left: 80px;
+	margin-top: 40px;
+	font-size: 10pt;
+	line-height: 120%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#siteinfo {
+	font-size: 12px;
+	text-align: center;
+	color: #333;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 120%;
+	margin: 10px 10px 30px 10px;
+	text-shadow: 1px 0px #999;
+}
+
+.contentDiv {
+	float: left;
+	width: 450px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+
+.contentDiv .title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 28px;
+	font-weight: bold;
+	color: #993366;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.contentDiv p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 150%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.contentDiv .editor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 120%;
+	font-weight: bold;
+	color: #993366;
+	text-align: right;
+	background-color: #EAF8AB;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentDiv .editor a {
+	color: #063;
+	text-decoration: none;
+}
+
+.contentDiv .responseDiv {
+	color: #F33;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+
+.functionDiv {
+	font-size: 10pt;
+	line-height: 16px;
+	color: #666;
+}
+
+.functionDiv a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #666;
+}
+
+.functionDiv a:hover {
+	color: #F30;
+}
+
+.messageDiv {
+	font-size: 12pt;
+	color: #900;
+	text-align: center;
+	margin: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.floorDiv {
+	width: 48px;
+	padding-right: 20px;
+	float: left;
+	height: 64px;
+	padding-left: 6px;
+}
+
+.floorDiv a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	text-decoration: none;
+	text-align:center;
+	width: 66px;
+	margin:2px auto;
+	padding-top:10px;	
+	display: block;
+}
+
+.pagebutton {
+	height: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+		
+			
