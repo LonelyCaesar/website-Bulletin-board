@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}<title>網站留言版-訪客留言</title>{% endblock %}
+
+{% block twomenu %}
+    <img src="{% static "images/comment.png" %}" width="16" height="16" align="absmiddle" /> <a href="/post/">我要留言</a> 
+    <img src="{% static "images/key.png" %}" width="16" height="16" align="absmiddle" /> <a href="/login/">版主管理</a>
+{% endblock %}
+
+{% block content %}
+  <table width="600" height="12" border="0" align="center" cellpadding="0" cellspacing="0" background="{% static "images/g_r5_c4.png" %}">
+    <tr>
+      <td valign="top" style="background:url"({% static "images/guestbook2_1.png" %}); "background-repeat:no-repeat">
+        <div id="postDiv">
+          <form action="." method="POST" name="form1">
+            {% csrf_token %}
+            <table width="100%" border="0" cellspacing="1" cellpadding="4">
+              <tr>
+                <th width="80" align="right" valign="baseline">標題</th>
+                <td valign="baseline">{{postform.boardsubject}}</td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">姓名</th>
+                <td valign="baseline">{{postform.boardname}}</td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">性別</th>
+                <td valign="baseline">
+                  <input name="boardgender" type="radio" id="boardgender" value="m" checked="checked" />
+                  <img src="{% static "images/boy.png" %}" width="52" height="80" alt="男生" />
+                  <input name="boardgender" type="radio" id="boardgender2" value="f" />
+                  <img src="{% static "images/girl.png" %}" width="52" height="80" alt="女生" /></td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">電子郵件</th>
+                <td valign="baseline">{{postform.boardmail}}</td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">相關網站</th>
+                <td valign="baseline">{{postform.boardweb}}</td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">內容</th>
+                <td valign="baseline">{{postform.boardcontent}}</td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">驗證碼</th>
+                <td valign="baseline">{{postform.captcha}}</td>
+              </tr>
+              <tr>
+                <th colspan="2" align="center" valign="baseline">
+                  <input type="submit" name="button" id="button" value="送出">
+                  <input type="reset" name="button2" id="button2" value="重設"></th>
+              </tr>
+            </table>
+            <span style="color:red">{{message}}</span>
+          </form>
+      </div></td>
+    </tr>
+    <tr>
+      <td><img src="{% static "images/g_r7_c4.png" %}" width="600" height="12" border="0" /></td>
+    </tr>
+  </table>
+  <span class="functionDiv"><img src="{% static "images/g_r9_c3.png" %}" width="600" height="20" border="0" /></span>
+{% endblock %}

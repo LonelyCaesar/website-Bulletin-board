@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}<title>網站留言版-登入管理</title>{% endblock %}
+
+{% block content %}
+  <table width="600" height="12" border="0" align="center" cellpadding="0" cellspacing="0" background="{% static "images/g_r5_c4.png" %}">
+    <tr>
+      <td valign="top" style="background:url"({% static "images/guestbook2_1.pngg_r5_c4.png" %}"); "background-repeat:no-repeat">
+        <div id="postDiv">
+          <form action="." method="POST" name="form1">
+            {% csrf_token %}
+            <table border="0" align="center" cellpadding="4" cellspacing="1">
+              <tr>
+                <th align="right" valign="baseline">帳號</th>
+                <td valign="baseline"><input name="username" type="text" id="username" style="width:200px"></td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">密碼</th>
+                <td valign="baseline"><input name="passwd" type="password" id="passwd" style="width:200px"></td>
+              </tr>
+              <tr>
+                <th align="right" valign="baseline">驗證碼</th>
+                <td valign="baseline">{{postform.captcha}}</td>
+              </tr>
+              <tr>
+                <th colspan="2" align="center" valign="baseline">
+                  <input type="submit" name="button" id="button" value="送出">
+                  <input type="reset" name="button2" id="button2" value="重設">
+                </th>
+                </tr>
+            </table>
+            <span style="color:red">{{message}}</span>
+          </form>
+      </div></td>
+    </tr>
+    <tr>
+      <td><img src="{% static "images/g_r7_c4.png" %}" width="600" height="12" border="0" /></td>
+    </tr>
+  </table>
+  <span class="functionDiv"><img src="{% static "images/g_r9_c3.png" %}" width="600" height="20" border="0" /></span>
+{% endblock %}
