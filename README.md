@@ -11,7 +11,6 @@
 
 # 三、實作
 請在anaconda/VScode的終端機上執行django-simple-captcha模組後，建立下圖上的資料夾，然後切換到cd board0專案後實作，專案以「python manage.py runserver」啟動伺服器。
-![image](https://github.com/user-attachments/assets/fd0ed297-caf0-48c1-bfac-04573541d935)
 
 ### 執行套件
 ```
