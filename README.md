@@ -1,4 +1,4 @@
-# website-Bulletin-board
+![image](https://github.com/user-attachments/assets/9993aff8-bbd9-44d0-bf6d-80f41d33b533)![image](https://github.com/user-attachments/assets/40bedb4a-3193-44e8-9819-c78dd7a9aa91)# website-Bulletin-board
 # 一、說明
 本專題在 Python 中使用 Django 建立出 web 專案製作出網站留言板，可以訪客留言及觀看，管理者登入後可修改留言內容及刪除留言，也可以對訪客留言的人做回應，對開發者是最方便的簡單的互動留言網站。
 # 二、相關文章
@@ -11,6 +11,7 @@
 
 # 三、實作
 請在anaconda/VScode的終端機上執行django-simple-captcha模組後，建立下圖上的資料夾，然後切換到cd board0專案後實作，專案以「python manage.py runserver」啟動伺服器。
+![image](https://github.com/user-attachments/assets/4e147b09-b8bb-4a0f-b9c9-c92d0bb03682)
 
 ### 執行套件
 ```
@@ -22,6 +23,7 @@ python manage.py migrate
 ```
 ### 1.	網站留言板資料庫結構：
 資料庫結構定義在boardapp\models.py中，內含BoardUnit資料表。
+
 ### boardapp\models.py程式碼：
 ```python
 from django.db import models
@@ -83,6 +85,10 @@ urlpatterns = [
 ```
 ### 4.	建立網頁模板：
 先在templates\建立<index.html>、<post.html>和<login.html>，然後在templates\base.html建立網頁模板，含標題、右上方瀏覽留言功能鈕及下方的版權部分。
+註：當程式碼建立後請先執行
+1. python manage.py makemigrations
+2. python manage.py migrate
+以python manage.py runserver啟動伺服器，開啟web瀏覽器時請將歷史紀錄給刪除，否則改變失敗。
 ### templates\base.html程式碼：
 ```html
 {% extends "base.html" %}
