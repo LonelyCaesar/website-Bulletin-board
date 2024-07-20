@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/9993aff8-bbd9-44d0-bf6d-80f41d33b533)![image](https://github.com/user-attachments/assets/40bedb4a-3193-44e8-9819-c78dd7a9aa91)# website-Bulletin-board
 # 一、說明
 本專題在 Python 中使用 Django 建立出 web 專案製作出網站留言板，可以訪客留言及觀看，管理者登入後可修改留言內容及刪除留言，也可以對訪客留言的人做回應，對開發者是最方便的簡單的互動留言網站。
 # 二、相關文章
