@@ -84,9 +84,12 @@ urlpatterns = [
 ```
 ### 4.	建立網頁模板：
 先在templates\建立<index.html>、<post.html>和<login.html>，然後在templates\base.html建立網頁模板，含標題、右上方瀏覽留言功能鈕及下方的版權部分。
+
 註：當程式碼建立後請先執行
+
 1. python manage.py makemigrations
 2. python manage.py migrate
+
 以python manage.py runserver啟動伺服器，開啟web瀏覽器時請將歷史紀錄給刪除，否則改變失敗。
 ### templates\base.html程式碼：
 ```html
