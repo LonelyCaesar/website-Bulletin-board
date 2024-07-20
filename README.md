@@ -10,7 +10,9 @@
 ![螢幕擷取畫面 (73)](https://github.com/LonelyCaesar/website-Bulletin-board/assets/101235367/5f5d777f-6df3-4106-8014-4a5b7d4056c0)
 
 # 三、實作
-請在anaconda/VScode的終端機上執行指令
+請在anaconda/VScode的終端機上執行django-simple-captcha模組後，建立下圖上的資料夾，然後切換到cd board0專案後實作，專案以「python manage.py runserver」啟動伺服器。
+![image](https://github.com/user-attachments/assets/fd0ed297-caf0-48c1-bfac-04573541d935)
+
 ### 執行套件
 ```
 pip install django
